@@ -85,6 +85,7 @@ function myFunction() {
       console.log(grille);
     }
     var resx = x + 1;
-    result.innerText = y + 1 + "" + resx + " " + orientation;
+    var resy = y + 1;
+    result.innerText = resx + "" + resy + " " + orientation;
   }
 }
