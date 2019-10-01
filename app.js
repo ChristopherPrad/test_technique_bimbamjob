@@ -1,4 +1,6 @@
 function myFunction() {
+  var result = document.getElementById("result");
+
   var posx = document.getElementById("x").value;
   var posy = document.getElementById("y").value;
   var ori = document.getElementById("ori").value;
@@ -82,5 +84,7 @@ function myFunction() {
       grille[y][x] = 1;
       console.log(grille);
     }
+    var resx = x + 1;
+    result.innerText = y + 1 + "" + resx + " " + orientation;
   }
 }
